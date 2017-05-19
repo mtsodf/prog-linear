@@ -1,0 +1,29 @@
+data;
+  
+set INDICES := 2 3 4 ;
+set MESES   := JAN FEV MAR ABR ;
+
+
+param:	norm_min	norm_max	 	ext_min		ext_max   sub_min	 arm_min	arm_max:=
+	JAN     0			150				0			30			0		0			220
+	FEV     0			150				0			30			0		0			220
+	MAR		0			150				0			30			0		0			220
+	ABR		0			150				0			30			0		0			220
+;
+
+
+
+	
+param:	custo_norm		custo_ext		custo_sub	custo_arm:=
+	JAN     20				25				30			0.5
+	FEV		22				27				30			0.5
+	MAR		25				30				35			0.5
+	ABR		27 				32				35			0.5;
+	
+	
+param: demanda :=	
+	JAN		160
+	FEV		140
+	MAR		180
+	ABR		160
+;

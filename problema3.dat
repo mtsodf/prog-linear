@@ -1,0 +1,26 @@
+param m := 6;
+
+param n := 3;
+
+
+set DEPOSITOS := 1..m
+set CLIENTES  := 1..n
+
+
+
+
+param : custo_fixo :=
+member(DEPOSITOS, 1)            10
+member(DEPOSITOS, 2)            10            
+member(DEPOSITOS, 3)            10
+member(DEPOSITOS, 4)            10
+member(DEPOSITOS, 5)            10
+member(DEPOSITOS, 6)            10
+
+
+param custo_transporte: 1    2  3   4   5   6 :=
+                        1   10  10  10  10  10
+                        2   10  10  10  10  10            
+                        3   10  10  10  10  10
+
+

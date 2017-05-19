@@ -1,0 +1,9 @@
+model problema1.mod;
+data problema1.dat;
+option solver cplex;
+solve;
+
+display x_norm;
+display x_ext;
+display x_sub;
+display x_arm;

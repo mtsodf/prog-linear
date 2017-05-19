@@ -1,0 +1,20 @@
+data;
+  
+set PRODUTOS := A B;
+set MATERIA_PRIMA   := Leite Suco;
+
+
+param: lucro  :=
+  A      7      
+  B      5   
+;
+
+param qtd : A       B  :=
+Leite       10      11
+Suco         2      1
+;
+
+param:    disp :=
+  Leite    240      
+  Suco      60
+;
