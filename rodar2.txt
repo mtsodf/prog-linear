@@ -1,6 +1,11 @@
 model problema2.mod;
 data problema2_d.dat;
-option solver cplex;
+option show_status 1;
+
+option solver cplex; 
+option cplex_options 'display=2 logfile=q02.log writeprob=q02.lp';
+
+
 solve;
 
 display x;
