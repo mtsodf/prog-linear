@@ -1,26 +1,33 @@
-param m := 6;
+param nDepositos := 6;
 
-param n := 3;
+param nClientes := 3;
 
+param custo_fixo :=
+1            100
+2            100            
+3            100
+4            100
+5            100
+6            100
+;
 
-set DEPOSITOS := 1..m
-set CLIENTES  := 1..n
-
-
-
-
-param : custo_fixo :=
-member(DEPOSITOS, 1)            10
-member(DEPOSITOS, 2)            10            
-member(DEPOSITOS, 3)            10
-member(DEPOSITOS, 4)            10
-member(DEPOSITOS, 5)            10
-member(DEPOSITOS, 6)            10
-
-
-param custo_transporte: 1    2  3   4   5   6 :=
-                        1   10  10  10  10  10
-                        2   10  10  10  10  10            
-                        3   10  10  10  10  10
-
-
+param custo_transporte :=     
+1 1 10
+1 2 10
+1 3 10
+1 4 10
+1 5 10
+1 6 10
+2 1 10
+2 2 10
+2 3 10
+2 4 10
+2 5 10
+2 6 10
+3 1 10
+3 2 10
+3 3 10
+3 4 10
+3 5 10
+3 6 10
+;

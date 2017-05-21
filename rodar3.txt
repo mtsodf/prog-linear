@@ -1,5 +1,6 @@
 model problema3.mod;
 data problema3.dat;
+
 option solver cplex;
 solve;
 
