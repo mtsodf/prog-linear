@@ -2,9 +2,10 @@ param nDepositos integer;
 param nClientes integer;
 
 
-param custo_fixo{1 .. nDepositos} >= 100, <= 500;
-param custo_transporte{1 .. nClientes, 1 .. nDepositos} >= 10, <=50;
+param custo_fixo{1 .. nDepositos} >= 100, <= 500, = min(max(Normal(300, 200), 100), 500);
 
+
+param custo_transporte{1 .. nClientes, 1 .. nDepositos} >= 10, <=50, =min(max(Normal(30, 20), 10), 50);
 
 
 var x{i in 1 .. nClientes, j in 1 .. nDepositos} >= 0, <= 1;
