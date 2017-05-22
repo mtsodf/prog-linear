@@ -1,0 +1,7 @@
+model problema3_b.mod;
+data problema3.dat;
+
+option solver cplex;
+solve;
+
+display x;
