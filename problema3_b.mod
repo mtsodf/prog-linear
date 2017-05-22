@@ -16,8 +16,8 @@ minimize GastoTotal: sum{j in 1 .. nDepositos, i in 1 .. nClientes} custo_transp
 
 
 subject to Satisfacoes{i in 1 .. nClientes}:
-    1 <= sum{j in 1 .. nDepositos} x[i, j] <= 1;
+    sum{j in 1 .. nDepositos} x[i, j] = 1;
 
 
-subject to Garantia{j in 1 .. nDepositos}:
-    sum {i in 1 .. nClientes}x[i, j] <= y[j];
+subject to Garantia{j in 1 .. nDepositos, i in 1 .. nClientes}:
+    x[i, j] <= y[j];
